@@ -35,13 +35,32 @@
       </p>
       <button id="dialogCloseButton" autofocus>OK</button>
     </dialog>
-    <button class="whiteKey">c</button>
-    <!--start at the middle C-->
-    <button class="whiteKey">d</button>
-    <button class="whiteKey">e</button>
-    <button class="whiteKey">f</button>
-    <button class="whiteKey">g</button>
-    <button class="whiteKey">a</button>
-    <button class="whiteKey">b</button>
+    <!--Cont = Container-->
+    <div class="keyboardCont">
+      <div class="octaveCont">
+        <div class="whiteKeyCont">
+          <!--start at the middle C-->
+          <!--data attribute to reference in javascript but not showing the text-->
+          <button class="whiteKey" data-note="c"></button>
+          <button class="whiteKey" data-note="d"></button>
+          <button class="whiteKey" data-note="e"></button>
+          <button class="whiteKey" data-note="f"></button>
+          <button class="whiteKey" data-note="g"></button>
+          <button class="whiteKey" data-note="a"></button>
+          <button class="whiteKey" data-note="b"></button>
+        </div>
+        <div class="blackKeyCont">
+          <button class="ghostKey"></button>
+          <button class="blackKey" data-note="c#"></button>
+          <button class="blackKey" data-note="d#"></button>
+          <button class="ghostKey"></button>
+          <button class="ghostKey"></button>
+          <button class="blackKey" data-note="f#"></button>
+          <button class="blackKey" data-note="g#"></button>
+          <button class="blackKey" data-note="a#"></button>
+          <button class="ghostKey"></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

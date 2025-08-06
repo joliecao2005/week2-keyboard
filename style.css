@@ -1,0 +1,58 @@
+.keyboardCont {
+  display: flex;
+  height: 10rem;
+}
+
+.octaveCont {
+  position: relative;
+  width: 15rem;
+  /* this contains both keys */
+}
+
+.whiteKeyCont {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: stretch;
+}
+
+.whiteKey {
+  flex: 1;
+}
+
+.whiteKey:hover {
+  cursor: pointer;
+}
+
+.whiteKey:active {
+  background-color: beige;
+}
+
+.blackKeyCont {
+  position: absolute;
+  /* this is to position right at the top of the container which has relative position of those inner elements */
+  top: 0%;
+  /* position black keys on white keys */
+  display: flex;
+  height: 50%;
+  width: 100%;
+  align-items: stretch;
+  pointer-events: none;
+}
+
+.blackKey {
+  flex: 1;
+  pointer-events: none;
+}
+
+.blackKey:hover {
+  cursor: pointer;
+}
+
+.blackKey:active {
+  background-color: rgb(98, 98, 35);
+}
+.ghostKey {
+  flex: 0.5;
+  opacity: 0;
+}
